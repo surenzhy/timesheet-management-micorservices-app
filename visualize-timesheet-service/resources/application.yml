@@ -1,0 +1,16 @@
+# Spring properties
+spring:
+  application:
+    name: visualize-timesheet-service
+
+# HTTP Server
+server:
+  port: @http.port@
+  
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+  instance:
+    leaseRenewalIntervalInSeconds: 5
